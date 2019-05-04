@@ -1,0 +1,55 @@
+
+inventory = ()
+if not inventory:
+    print ("You are empty-handed.")    
+input("\nPress the enter key to continue."
+inventory = ("Sword", "Armor", "Shield", "Healing Potion")
+print ("\nThe tuple inventory is:\n", inventory)
+print ("\nYour items:")
+for item in inventory:
+    print (item)
+    
+input("Press the enter key to exit.")
+
+inventory = ()
+
+
+inventory = ("Sword", "Armor", "Shield", "Healing Potion")
+print("Your items:")
+for item in inventory:
+    print (item)
+    
+input("Press the enter key to continue.")
+
+
+print ("Your have", len(inventory), "items in your possession.")
+
+input("Press the enter key to continue.")
+
+
+if "Healing Potion" in inventory:
+    print ("You will live to fight another day.")
+    
+
+index = int(input("\nEnter the index number for an item in inventory: "))
+print ("At index", index, "is", inventory[index])
+
+
+begin = int(input("\nEnter the index number to begin a slice:"))
+end = int(input("\nEnter the index number to end the slice:"))
+print("inventory[", begin, ":", end, "]\t\t")
+print(inventory[begin:end])
+
+input("Press the enter key to exit.")
+
+inventory = ("Sword", "Armor", "Shield", "Healing Potion")
+chest = ("Gold", "Gems")
+print("You find a chest. It contains:")
+print(chest)
+print("You add the contents of the chest to your inventory.")
+inventory += chest
+print("Your inventory is now:")
+
+print(inventory)
+
+input("Press the enter key to exit.")
