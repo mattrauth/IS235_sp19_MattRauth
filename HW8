@@ -1,0 +1,151 @@
+#Modulus Operator
+quotient = 7/3
+print(quotient)
+
+remainder = 7%3
+print(remainder)
+
+#Boolean Expressions
+5 == 5
+type(True)
+
+5 == 6
+type(False)
+
+#x is not equal to y
+    #x != y
+#x is greater than y
+    #x > y 
+#x is less than y
+    #x < y
+#x is greater than or equal to y
+    #x >= y
+#x is less than or equal to y
+    #x <= y 
+
+#Logical Operators
+    #No code to copy, just an overall explanation in the text
+    
+#Conditional Execution
+x = 5
+if x > 0:
+    print("x is positive")
+if x < 0:
+    pass #need to handle negative values (this serves as a placeholder)
+
+#Alternative Execution
+if x%2 == 0:
+    print("x is even")
+else:
+    print("x is odd")
+    
+#Chained Conditionals
+y = 4
+if x < y:
+    print ("x is less than y")
+elif x > y:
+    print ("x is greater than y")
+else:
+    print ("x and y are equal")
+    
+#Demonstrates that an "else" statement is not always required 
+#choice = "a"
+#if choice == "a":
+    #draw_a()
+#elif choice == "b":
+    #draw_b()
+#elif choice == "c":
+    #draw_c()
+    
+#Nested Conditionals
+if x == y:
+    print ("x and y are equal")
+else:
+    if x < y:
+        print ("x is less than y")
+    else:
+        print ("x is greater than y")
+
+#Compairison of a nested conitional and a logical operator
+if 0 < x:
+    if x < 10:
+        print ("x is a positive single-digit number.")
+        
+if 0 < x and x < 10:
+    print ("x is a positive single-digit number.")
+    
+    #Modulus Operator
+quotient = 7/3
+print(quotient)
+
+remainder = 7%3
+print(remainder)
+
+#Boolean Expressions
+5 == 5
+type(True)
+
+5 == 6
+type(False)
+
+#x is not equal to y
+    #x != y
+#x is greater than y
+    #x > y 
+#x is less than y
+    #x < y
+#x is greater than or equal to y
+    #x >= y
+#x is less than or equal to y
+    #x <= y 
+
+#Logical Operators
+    #No code to copy, just an overall explanation in the text
+    
+#Conditional Execution
+x = 5
+if x > 0:
+    print("x is positive")
+if x < 0:
+    pass #need to handle negative values (this serves as a placeholder)
+
+#Alternative Execution
+if x%2 == 0:
+    print("x is even")
+else:
+    print("x is odd")
+    
+#Chained Conditionals
+y = 4
+if x < y:
+    print ("x is less than y")
+elif x > y:
+    print ("x is greater than y")
+else:
+    print ("x and y are equal")
+    
+#Demonstrates that an "else" statement is not always required 
+#choice = "a"
+#if choice == "a":
+    #draw_a()
+#elif choice == "b":
+    #draw_b()
+#elif choice == "c":
+    #draw_c()
+    
+#Nested Conditionals
+if x == y:
+    print ("x and y are equal")
+else:
+    if x < y:
+        print ("x is less than y")
+    else:
+        print ("x is greater than y")
+
+#Compairison of a nested conitional and a logical operator
+if 0 < x:
+    if x < 10:
+        print ("x is a positive single-digit number.")
+        
+if 0 < x and x < 10:
+    print ("x is a positive single-digit number.")
