@@ -1,0 +1,23 @@
+#Import the random module
+import random
+#Welcome the player and introduce the game
+print("Welcome to 'Guess My Number!'")
+print("I'm thinking of a number between 1 and 100.")
+print("Try to guess my number in as few attempts as possible.")
+#Set the initial values of the game
+the_number = random.randrange(100) + 1
+guess = int(input("Take a guess:"))
+tries = 1
+#Start guessing loop
+while (guess!=the_number):
+    if(guess > the_number):
+        print("Lower...")
+    else:
+        print("Higher...")
+    guess = int(input("Take a guess:"))
+    tries += 1
+#Congratulate the player
+print("You guessed it! The number was", the_number)
+print("And it only took you", tries, "tries!")
+#Allow the player to quit
+input("Press the enter key to exit.")
