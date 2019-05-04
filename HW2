@@ -1,0 +1,8 @@
+Inputted_Message = input("Please input a message.")
+high=len(Inputted_Message)
+low=-len(Inputted_Message)
+position=high-1
+for x in range(len(Inputted_Message)):
+    print("Inputted_Message", position, Inputted_Message[position])
+    position-=1
+input("Press enter to exit.")
