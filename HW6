@@ -1,0 +1,96 @@
+#Import Pandas
+import pandas as pd
+#Import data from .csv file
+df1 = pd.read_csv("sentiment_analysis.csv")
+#Measure how long .csv file is and create variable
+lines = df1.index.size
+#Create a for loop
+for i in range(lines):
+    #Get words from .csv file
+    word = (df1.at[i, "Sentiment"])
+    #Get ratings from .csv file
+    rating = float(df1.at[i, "Rating"])
+    #Get prices from .csv file
+    price = float(df1.at[i, "Price"])
+    #If the word has 'e' factor = 1000; no 'e' factor = 2000
+    if "e" in word and "w" in word:
+        factor = 3000
+    elif "w" in word or "r" in word:
+        factor = 4000
+    elif "n" in word and "g" not in word:
+        factor = 5000
+    elif "e" in word:
+        factor = 1000
+    else:
+        factor = 2000
+    #Create variable, Target_Price = rating*factor
+    target_price = rating*factor
+    #Create if loop, if target price > current price, buy
+    if target_price > price:
+    #Print "word" for that row of the .csv file
+        print(word)
+    #Print if word has the letter e or not
+        if "e" and "w" in word:
+            print("The letters 'e' and 'w' are in the word.")
+        elif "w" in word or "r" in word:
+            print("The letters 'w' or 'r' or in the word.")
+        elif "n" in word and "g" not in word:
+            print("The letter 'n' is in the word but 'g' is not.")
+        elif "e" in word: 
+            print("The letter 'e' is in the word.")
+        else:
+            print("The letter 'e' is not in the word.")
+        #Print the factor used in that row
+        print(factor)
+        #Print the current price
+        print(price)
+        #Print the target price
+        print(target_price)
+        #Print "Buy"
+        print("Buy")
+    #Create elif loop, if target price < current price, sell
+    elif target_price < price:
+        #Print "word" for that row of the .csv file
+        print(word)
+        #Print if word has the letter e or not
+        if "e" and "w" in word:
+            print("The letters 'e' and 'w' are in the word.")
+        elif "w" in word or "r" in word:
+            print("The letters 'w' or 'r' are in the word.")
+        elif "n" in word and "g" not in word:
+            print("The letter 'n' is in the word but 'g' is not.")
+        elif "e" in word: 
+            print("The letter 'e' is in the word.")
+        else:
+            print("The letter 'e' is not in the word.")
+        #Print the factor used in that row
+        print(factor)
+        #Print the current price
+        print(price)
+        #Print the target price
+        print(target_price)
+        #Print "Sell"
+        print("Sell")
+    #Create elif loop, if target price = current price, do nothing
+    else:
+        #Print "word" for that row of the .csv file
+        print(word)
+        #Print if word has the letter e or not
+        if "e" and "w" in word:
+            print("The letters 'e' and 'w' are in the word.")
+        elif "w" in word or "r" in word:
+            print("The letters 'w' or 'r' are in the word.")
+        elif "n" in word and "g" not in word:
+            print("The letter 'n' is in the word but 'g' is not.")
+        elif "e" in word: 
+            print("The letter 'e' is in the word.")
+        else:
+            print("The letter 'e' is not in the word.")
+        #Print the factor used in that row
+        print(factor)
+        #Print the current price
+        print(price)
+        #Print the target price
+        print(target_price)
+        #Print "Do Nothing"
+        print("Do nothing")
