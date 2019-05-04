@@ -1,0 +1,47 @@
+#Get a sentence from the user and store that sentence as a variable
+sentence1 = input("Please type in a sentence and press the 'enter' key. ")
+#Create variables to house the user's modified sentences
+sentence2 = ""
+sentence3 = ""
+sentence4 = ""
+#Find the length of the user's sentence and store it as a variable
+length = len(sentence1)
+#Define which characters are vowels
+VOWELS = "aieouAEIOU"
+#Define which characters are consonants
+CONSONANTS = "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ"
+#Create a variable to house the number of vowels in the user's sentence
+vowel_count = 0
+#Create a variable to house the number of consonants in the user's sentence
+consonant_count = 0 
+#Create a variable to house the number of other characters in the user's sentence
+other_count = 0
+#Loop from 0 to length of sentence
+for i in range(length):
+    #If vowel, print that vowel, add that vowel to the new string, and count the number of vowels so far
+    if sentence1[i] in VOWELS:
+        print(sentence1[i])
+        sentence2+=sentence1[i]
+        vowel_count+=1
+    #If consonant, print that consonant and count the number of consonants so far
+    elif sentence1[i] in CONSONANTS:
+        print(sentence1[i])
+        sentence3+=sentence1[i]
+        consonant_count+=1
+    #If other character, print that other character and count the number of other characters so far
+    else:
+        print(sentence1[i])
+        sentence4+=sentence1[i]
+        other_count+=1
+#Print new sentences
+print ("Your vowels are:", sentence2)
+print ("Your consonants are:", sentence3)
+print ("Your other characters are:", sentence4)
+#Print the number of vowels
+print ("Number of vowels =", vowel_count)
+#Print the number of consonants
+print ("Number of consonants =", consonant_count)
+#Print the number of other characters
+print ("Number of other characters =", other_count)
+#Allow user to exit
+input("Please press the 'enter' key to exit.")
