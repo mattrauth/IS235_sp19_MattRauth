@@ -1,0 +1,77 @@
+print("Welcome to the 'Three-Year-Old Simulator'\n")
+print("This program simulates a conversation with a three-year old child.")
+print("Try to stop the madness.\n")
+
+response = ""
+while response != "Because.":
+    response = input("Why?\n")
+    
+print("Oh. Okay.")
+      
+input("Press the enter key to exit.")
+print("Your lone hero is surrounded by a massive army of trolls.")
+print("Their decaying green bodies stretch out, melting into the horizon.")
+print("Your hero unsheathes his sword and begins the last fight of his life.\n")
+
+
+health = 10
+trolls = 0
+damage = 3
+
+#Inital condition that causes infinite loop; while health != 0:
+while health > 0:
+    trolls += 1
+    health = health - damage
+    
+    print("Your hero swings and defeats an evil troll, but takes", damage, "damage points.\n")
+    
+print("Your hero fought valiantly and defeated", trolls, "trolls.")
+print("But alas, your hero is no more.")
+
+input("Press the enter key to exit.")
+
+count = 0 
+while True:
+    count += 1
+    #end loop if count is greater than 10
+    if count > 10:
+        break
+    #skip 5
+    if count == 5:
+        continue
+    print(count)
+    
+input("\n\nPress the enter key to exit.")
+
+print("\tExclusive Computer Network")
+print("\t\tMembers only!\n")
+
+security = 0
+
+username = ""
+while not username:
+    username = input("Username: ")
+    
+password = ""
+while not password:
+    password = input("Password: ")
+    
+if username == "M.Dawson" and password == "secret":
+    print("Hi, Mike.")
+    security = 5
+elif username == "S.Meier" and password == "civilization":
+    print("Hey, Sid.")
+    secuirty = 3
+elif username == "S.Miyamoto" and password == "mariobros":
+    print("What's up, Shigeru?.")
+    secuirty = 3
+elif username == "W.Wright" and password == "thesims":
+    print("Ho goes it, Will?.")
+    secuirty = 3
+elif username == "guest" and password == "guest":
+    print("Welcome, huest.")
+    secuirty = 1
+else:
+    print("Login failed. You're not so exclusive.\n")
+    
+input("\n\nPress the enter key to exit.")
