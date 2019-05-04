@@ -1,0 +1,13 @@
+#factor=123000
+factor = 123000
+#get rating from user (rating should be between 0-10)
+rating = int(input("Please input a rating for a particular asset. The rating should be between 0 and 10: "))
+#get price from user (price should be between $100,000 and $2 million)
+price = int(input("Please input the price of the same asset. The price should be between $100,000 and $2,000,000: "))
+#make buy or don't buy decision
+    #if the price is lower than the (rating*factor), buy
+if price<(rating*factor):
+    print("Buy")
+    #if the price is higher than the (rating*factor), don't buy
+if price>(rating*factor):
+    print("Don't Buy")
